@@ -1,0 +1,141 @@
+.page {
+  margin: 0;
+  padding: 0;
+  height: 1000vh;
+}
+
+.ivrit p {
+  direction: rtl;
+}
+
+.japan p {
+  writing-mode: vertical-lr;
+}
+
+.inline-and-block span {
+  width: 300px;
+  height: 300px;
+  background-color: orange;
+  display: block;
+}
+
+.inline-and-block p {
+  width: 300px;
+  background-color: orange;
+  border: 5px solid red;
+  padding: 10px;
+  margin: 40px;
+  box-sizing: border-box;
+}
+
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 200px;
+}
+
+.flex {
+  height: 500px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 48px;
+}
+
+.columns p {
+  column-count: 5;
+}
+
+.columns img {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(3, 300px);
+  min-height: 500px;
+  gap: 10px;
+}
+.cell {
+  box-shadow: 0 0 2px red;
+}
+
+.float img {
+  width: 300px;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.round {
+  width: 80px;
+  height: 80px;
+  background-color: #000;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.outer {
+  position: relative;
+  height: 800px;
+  display: flex;
+  align-items: flex-end;
+  background-color:violet;
+}
+
+.absolute {
+  height: 500px;
+  background-color: lightgreen;
+  position: relative;
+}
+
+.red-round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.relative {
+  height: 500px;
+}
+
+.blue-round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: blue;
+  position: relative;
+  top: 20px;
+  left: 40px;
+}
+
+.sticky {
+  height: 500px;
+  background-color: pink;
+  display: flex;
+  align-items: flex-start;
+}
+
+.orange-round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: orange;
+  position: sticky;
+  top: 0;
+  right: 0;
+}
