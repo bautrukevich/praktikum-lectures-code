@@ -1,0 +1,3 @@
+.accordion__icon_is_rotated {
+  transform: rotate(180deg);
+}

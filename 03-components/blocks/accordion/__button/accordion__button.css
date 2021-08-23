@@ -1,0 +1,16 @@
+.accordion__button {
+  width: 100%;
+  min-height: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 0;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  cursor: pointer;
+}
