@@ -1,31 +1,29 @@
 .page {
   margin: 0;
   padding: 0;
-  height: 1000vh;
+  height: 100000vh;
 }
 
 .ivrit p {
   direction: rtl;
 }
 
-.japan p {
+.japan {
   writing-mode: vertical-lr;
 }
 
 .inline-and-block span {
-  width: 300px;
-  height: 300px;
   background-color: orange;
-  display: block;
+  width: 100px;
+  height: 100px;
 }
 
 .inline-and-block p {
-  width: 300px;
-  background-color: orange;
-  border: 5px solid red;
   padding: 10px;
-  margin: 40px;
-  box-sizing: border-box;
+  border: 5px solid red;
+  margin: 10px;
+  background-color: orange;
+  width: 300px;
 }
 
 
@@ -35,20 +33,35 @@
 
 .inline-block {
   display: inline-block;
+  padding: 10px;
+  background-color: blue;
+  color: #fff;
+  min-width: 100px;
+}
+
+.block {
+  display: block;
   width: 200px;
+  height: 100px;
+  background-color: lightpink;
+  padding: 10px;
 }
 
 .flex {
-  height: 500px;
-  background-color: lightblue;
+  height: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 48px;
 }
 
-.columns p {
-  column-count: 5;
+.flex p {
+  background: #000;
+  padding: 10px;
+  color: #fff;
+}
+
+.columns {
+  column-count: 3;
 }
 
 .columns img {
@@ -57,11 +70,11 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(3, 300px);
-  min-height: 500px;
   gap: 10px;
 }
+
 .cell {
   box-shadow: 0 0 2px red;
 }
@@ -76,66 +89,50 @@
 }
 
 .round {
-  width: 80px;
-  height: 80px;
-  background-color: #000;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+  background-color: darkgreen;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  right: 10px;
+  bottom: 10px;
 }
 
 .outer {
-  position: relative;
   height: 800px;
+  background-color: orangered;
   display: flex;
   align-items: flex-end;
-  background-color:violet;
+  position: relative;
 }
 
 .absolute {
-  height: 500px;
   background-color: lightgreen;
-  position: relative;
-}
-
-.red-round {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: red;
-  position: absolute;
-  top: 40px;
-  left: 40px;
-}
-
-.relative {
-  height: 500px;
-}
-
-.blue-round {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: blue;
-  position: relative;
-  top: 20px;
-  left: 40px;
-}
-
-.sticky {
-  height: 500px;
-  background-color: pink;
-  display: flex;
-  align-items: flex-start;
+  padding: 10px;
 }
 
 .orange-round {
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: orange;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.sticky {
+  background-color: orange;
+  display: flex;
+  height: 700px;
+}
+
+.blue-round {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: blue;
   position: sticky;
-  top: 0;
-  right: 0;
+  top: 10px;
+  left: 10px;
 }
