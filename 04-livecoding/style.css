@@ -1,0 +1,200 @@
+/* Напишем анимации на стриме */
+
+html {
+  /* Пробросим высоту и объясним, зачем и как */
+}
+
+.page {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f8ff;
+}
+
+/* Проговорить про ширину секции */
+
+.page__content-section {
+  width: 95%;
+  margin: auto;
+}
+
+.page__title {
+  font-size: 36px;
+  margin: 60px 0 40px;
+}
+
+/* Ширина для любых случаев */
+.header {
+  
+}
+
+
+
+/* 95% ширины, растянем контент, 80px высоты, по центру */
+
+.header__wrapper {
+  
+}
+
+/* Белый текст */
+.header_theme_dark {
+  color: #fff;
+}
+
+.header__logo {
+  height: 60px;
+}
+
+/* Пояснить за наследование и закрасить svg белым*/
+.header_theme_dark .header__logo {
+  
+}
+
+.header__link {
+  /* Ссылки не наследуют стили, сделать наследуемым цвет */
+
+  font-size: 14px;
+  text-decoration: none;
+  /* Отступы между ссылками 20 */
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.header__link:last-of-type {
+  /* Обнуление */
+}
+
+/* Отнаследуем высоту от родителя и предположим позиционирование внутри*/
+.cover {
+  
+}
+
+/* Позиционируем абсолютно */
+.cover__header {
+  
+}
+
+/* Уточняем высоту для внутреннего блока 600px */
+.cover_type_inner {
+  
+}
+
+/* Подгоним видео под блок */
+
+.cover__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Полупрозрачный черный оверлэй поверх видео */
+.cover__overlay {
+  
+}
+
+/* Отдельный модификатор "все по центру внутри оверлэя" */
+.cover__overlay_inner-content_centered {
+  
+}
+
+/* Текст и иконка выровнены по центру */
+
+.cover__title {
+  margin: 0;
+  color: #fff;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+.cover__decoration-letter {
+  width: 100px;
+  margin: 0 20px;
+}
+
+.cover__image_fill_white {
+  fill: #fff;
+}
+
+.cover__image_size_large {
+  width: 150px;
+}
+
+/* Разместим бордер по центру поверх картинки */
+
+.cover__border {
+  width: 350px;
+}
+
+
+/* Карточки с переносом */
+.card-list {
+  
+}
+
+.card {
+  width: 400px;
+  position: relative;
+}
+
+/* Маркеры налево и вверх на 10 и 12 соответственно */
+.card__marker {
+  
+  padding: 8px;
+  box-shadow: 0 0 2px black;
+}
+
+.card__marker_type_dead {
+  background-color: #000;
+  color: #fff;
+}
+
+.card__marker_type_alive {
+  background-color: #fff;
+  color: #000;
+}
+
+.card__title {
+  font-size: 20px;
+  margin: 20px o;
+}
+
+/* Подогнать картинки под всю ширину и 400 в высоту */
+
+.card__image {
+
+}
+
+.card__text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+/* Построить сетку на гридах, сстрока высоты 350, гэп 4 */
+.photo-grid {
+
+}
+
+/* Подогнать картинки */
+.photo-grid__item {
+
+}
+
+/* Область первого элемента */
+
+.photo-grid__item:first-of-type {
+
+}
+
+/* Область второго элемента */
+
+.photo-grid__item:nth-of-type(4) {
+
+}
+
+.footer {
+  min-height: 80px;
+  background-image: linear-gradient(to bottom, #f8f8ff, grey);
+}
