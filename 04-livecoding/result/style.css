@@ -1,0 +1,225 @@
+/* Напишем анимации на стриме */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: rotation linear 5s infinite;
+}
+
+html {
+  /* Пробросим высоту и объясним, зачем и как */
+  height: 100%;
+}
+
+.page {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f8ff;
+  height: 100%;
+}
+
+/* Проговорить про ширину секции */
+
+.page__content-section {
+  width: 95%;
+  margin: auto;
+}
+
+.page__title {
+  font-size: 36px;
+  margin: 60px 0 40px;
+}
+
+/* Ширина для любых случаев */
+.header {
+  width: 100%;
+}
+
+
+
+/* 95% ширины, растянем контент, 80px высоты, по центру */
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Белый текст */
+.header_theme_dark {
+  color: #fff;
+}
+
+.header__logo {
+  height: 60px;
+}
+
+/* Пояснить за наследование и закрасить svg белым*/
+.header_theme_dark .header__logo {
+  fill: #fff;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__item {
+  margin-right: 20px;
+}
+
+.nav__item:last-of-type {
+  margin-right: 0;
+}
+
+.header__link {
+  /* Ссылки не наследуют стили, сделать наследуемым цвет */
+  color: inherit;
+  font-size: 14px;
+  text-decoration: none;
+  /* Отступы между ссылками 20 */
+  
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+/* Отнаследуем высоту от родителя и предположим позиционирование внутри*/
+.cover {
+  position: relative;
+}
+
+/* Позиционируем абсолютно */
+.cover__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Уточняем высоту для внутреннего блока 600px */
+.cover_type_inner {
+  height: 600px;
+}
+
+/* Подгоним видео под блок */
+
+.cover__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Полупрозрачный черный оверлэй поверх видео */
+.cover__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Отдельный модификатор "все по центру внутри оверлэя" */
+.cover__overlay_inner-content_centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Текст и иконка выровнены по центру */
+
+.cover__title {
+  margin: 0;
+  color: #fff;
+  font-size: 80px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover__decoration-letter {
+  width: 100px;
+  margin: 0 20px;
+}
+
+.cover__image_fill_white {
+  fill: #fff;
+}
+
+.cover__image_size_large {
+  width: 150px;
+}
+
+/* Разместим бордер по центру поверх картинки */
+
+.cover__border {
+  width: 350px;
+  position: absolute;
+}
+
+
+/* Карточки с переносом */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  gap: 40px;
+}
+
+.card {
+  position: relative;
+}
+
+/* Маркеры налево и вверх на 10 и 12 соответственно */
+.card__marker {
+  position: absolute;
+  top: -10px;
+  left: -12px;
+  padding: 8px;
+  box-shadow: 0 0 2px black;
+}
+
+.card__marker_type_dead {
+  background-color: #000;
+  color: #fff;
+}
+
+.card__marker_type_alive {
+  background-color: #fff;
+  color: #000;
+}
+
+.card__title {
+  font-size: 20px;
+  margin: 20px o;
+}
+
+/* Подогнать картинки под всю ширину и 400 в высоту */
+
+.card__image {
+  width: 100%;
+}
+
+.card__text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.footer {
+  min-height: 80px;
+  background-image: linear-gradient(to bottom, #f8f8ff, grey);
+}
