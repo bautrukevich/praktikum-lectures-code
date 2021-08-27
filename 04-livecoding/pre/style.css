@@ -171,29 +171,6 @@ html {
   line-height: 1.4;
 }
 
-
-/* Построить сетку на гридах, сстрока высоты 350, гэп 4 */
-.photo-grid {
-
-}
-
-/* Подогнать картинки */
-.photo-grid__item {
-
-}
-
-/* Область первого элемента */
-
-.photo-grid__item:first-of-type {
-
-}
-
-/* Область второго элемента */
-
-.photo-grid__item:nth-of-type(4) {
-
-}
-
 .footer {
   min-height: 80px;
   background-image: linear-gradient(to bottom, #f8f8ff, grey);
