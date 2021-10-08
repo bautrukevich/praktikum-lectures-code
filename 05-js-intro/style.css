@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 48px;
+}
+
+.content__title {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin-bottom: 24px;
+}
+
+.button {
+  font-size: 18px;
+  background: none;
+  border: 1px solid #3c3c3c;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #3c3c3c;
+  color: #fff;
+}
