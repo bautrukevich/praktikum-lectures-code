@@ -1,0 +1,57 @@
+.header {
+  color: #000;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.header__title {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #000;
+  font-size: 64px;
+}
+
+.sidebar {
+  float: left;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
+.icon-mail {
+  background-image: url("/icons/mail.svg");
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+
+.icon-snail {
+  background-image: url("/icons/snail.svg");
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+
+.icon-user {
+  background-image: url("/icons/user.svg");
+  position: absolute;
+  width: 48px;
+  height: 48px;
+}
+
+.icon-alert {
+  background-image: url("/icons/alert.svg");
+  position: absolute;
+  width: 128px;
+  height: 128px;
+}
+
+.link {
+  color: blue;
+}
+.link:hover {
+  color: lightblue;
+}
+.link:focus {
+  color: darkblue;
+}
+.link::after {
+  content: "";
+}/*# sourceMappingURL=styles.css.map */

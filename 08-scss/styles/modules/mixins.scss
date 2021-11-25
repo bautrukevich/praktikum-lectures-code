@@ -1,0 +1,9 @@
+
+@mixin icon($name, $width, $height) {
+  .icon-#{$name} { // `.icon-${name}`
+    background-image: url("/icons/#{$name}.svg"); // `background-image: url("/icons/${name}.svg");`
+    position: absolute;
+    width: #{$width}px;
+    height: #{$height}px;
+  }
+}

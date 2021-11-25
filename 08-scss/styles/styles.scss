@@ -1,0 +1,34 @@
+@import "./modules/variables.scss";
+@import "./modules/functions.scss";
+@import "./modules/mixins.scss";
+@import "./modules/blocks/header/header.scss";
+@import "./modules/blocks/header/header__title.scss";
+
+.sidebar {
+  float: left;
+  margin-left: pow(2, 3) * 1px;
+  margin-right: divide(8, 2) * 1px;
+}
+
+@include icon("mail", 32, 32);
+@include icon("snail", 64, 64);
+@include icon("user", 48, 48);
+@include icon("alert", 128, 128);
+
+.link {
+  color: blue;
+
+  &:hover {
+    color: lightblue;
+  }
+
+  &:focus {
+    color: darkblue;
+  }
+
+  &::after {
+    content: '';
+  }
+}
+
+
