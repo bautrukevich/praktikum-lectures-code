@@ -1,0 +1,9 @@
+.popup {
+  padding: 50px;
+  border: 1px solid #3c3c33;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup__container {
+  background-color: #fff;
+}
