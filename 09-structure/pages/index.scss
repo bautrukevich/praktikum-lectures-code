@@ -1,5 +1,8 @@
 @import '../vendor/normalize';
 @import '../vendor/fonts';
-@import '../blocks/page/page.scss';
-@import '../blocks/header/header.scss';
-@import '../blocks/footer/footer.scss';
+@import '../styles/variables.scss';
+@import '../styles/functions.scss';
+@import '../styles/mixins.scss';
+@import '../styles/blocks/page/page.scss';
+@import '../styles/blocks/header/header.scss';
+@import '../styles/blocks/footer/footer.scss';
