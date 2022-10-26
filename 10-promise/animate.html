@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      .square {
+        width: 100px;
+        height: 100px;
+      }
+
+      .square_bg_red {
+        background-color: red;
+      }
+      .square_bg_green {
+        background-color: green;
+      }
+      .square_bg_blue {
+        background-color: blue;
+      }
+
+      .is-animating {
+        transform: translateX(500px);
+        transition: transform 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square square_bg_red"></div>
+    <div class="square square_bg_green"></div>
+    <div class="square square_bg_blue"></div>
+  </body>
+  <script >
+    // const redElement = document.querySelector('.square_bg_red')
+    // const greenElement = document.querySelector('.square_bg_green')
+    // const blueElement = document.querySelector('.square_bg_blue')
+    //
+    // const promises = []
+    // promises.push(new Promise((resolve) => {
+    //   setTimeout(() => {
+    //     redElement.classList.add('is-animating')
+    //     redElement.addEventListener('transitionend', resolve)
+    //   }, 500)
+    // }))
+    //
+    // promises.push(new Promise((resolve) => {
+    //   setTimeout(() => {
+    //     greenElement.classList.add('is-animating')
+    //     greenElement.addEventListener('transitionend', resolve)
+    //   }, 1000)
+    // }))
+    //
+    // promises.push(new Promise((resolve) => {
+    //   setTimeout(() => {
+    //     blueElement.classList.add('is-animating')
+    //     blueElement.addEventListener('transitionend', resolve)
+    //   }, 100)
+    // }))
+    //
+    // Promise.race(promises)
+    //   .then(() => {
+    //     alert('Done!')
+    //   })
+
+    // Promise.resolve()
+    //
+    // function fetchArticles() {
+    //   return fetch('/articles')
+    // }
+    //
+    // function fakeFetchArticles() {
+    //   return Promise.resolve([])
+    // }
+    //
+    // const page = {}
+    //
+    // fakeFetchArticles().then((articles) => {
+    //   page.articles = articles
+    // })
+
+    // const spinner = document.querySelector('.spinner');
+    // spinner.classList.add('spinner_is_loading')
+    //
+    // fetch('/articles')
+    //   .then((articles) => {
+    //     // spinner.classList.remove('spinner_is_loading')
+    //   })
+    //   .catch(() => {
+    //     // spinner.classList.remove('spinner_is_loading')
+    //   })
+    //   .finally(() => {
+    //     spinner.classList.remove('spinner_is_loading')
+    //   })
+    //
+    // Promise.resolve(1)
+    //   .then(result => console.log(result))
+    //   .then(() => {
+    //     throw new Error('Ошибка')
+    //   })
+    //   .catch(error => console.log(error))
+    //   .then(() => console.log('Работаем дальшше'))
+
+    async function fetchArticles() {
+      try {
+        const response = await fetch('/articles')
+        const articles = await response.json()
+        console.log('Работаем дальше')
+      } catch (error) {
+        console.log(error)
+      }
+    }
+  </script>
+</html>

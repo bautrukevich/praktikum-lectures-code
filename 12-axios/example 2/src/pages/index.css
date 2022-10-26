@@ -1,0 +1,57 @@
+@import "../vendor/normalize.css";
+
+.page {
+  background: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.weather {
+  width: 700px;
+  margin: 0 auto;
+  padding: 40px 0 12px;
+}
+
+.weather-form {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.weather-form_input {
+  background: white;
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 21px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  border: 2px solid #000;
+  flex-grow: 1;
+}
+
+.weather-form_submit {
+  background: rgb(162, 208, 250);
+  font-size: 24px;
+  padding: 21px;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  border: 2px solid rgb(83, 172, 255);
+  margin-left: 10px;
+  cursor: pointer;
+  width: 220px;
+}
+
+.weather-form_submit:hover {
+  opacity: 0.9;
+}
+
+.table {
+  width: 700px;
+  font-size: 16px;
+}
+
+.table__data {
+  padding: 20px;
+  text-align: center;
+}

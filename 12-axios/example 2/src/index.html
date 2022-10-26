@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap"
+    />
+  </head>
+
+  <body>
+    <div class="page">
+      <section class="weather">
+        <form class="weather-form">
+          <input
+            type="text"
+            class="weather-form_input"
+            placeholder="Введите город"
+            required
+          />
+          <button type="submit" class="weather-form_submit">Получить прогноз</button>
+        </form>
+        <table class="table">
+          <tr class="table__header">
+            <th class="table__data">Время</th>
+            <th class="table__data">Температура</th>
+            <th class="table__data">Влажность</th>
+            <th class="table__data">Облачность</th>
+            <th class="table__data">Ветер</th>
+          </tr>
+          <template class="template-weather-data">
+            <tr class="table__row">
+              <td class="table__data table__data_time">Время</td>
+              <td class="table__data table__data_temp">Температура</td>
+              <td class="table__data table__data_humid">Влажность</td>
+              <td class="table__data table__data_cloud">Облачность</td>
+              <td class="table__data table__data_wind">Ветер</td>
+            </tr>
+          </template>
+        </table>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" />
+</head>
+
+<body>
+  <div class="page">
+    <section class="todolist">
+      <h1>Todo List</h1>
+      <div class="projects"></div>
+      <div class="todolist__list"></div>
+    </section>
+  </div>
+
+  <template id="project-template" style="display: none;">
+    <li><button class="projects__project">Проект</button></li>
+  </template>
+
+  <template id="projects-template" style="display: none;">
+    <p class="projects__title">Проекты: </p>
+    <ul class="projects__list"></ul>
+  </template>
+
+  <template id="todolist-form-template" style="display: none;">
+    <form class="todolist-form">
+      <input type="text" class="todolist-form_input" placeholder="Введите текст задачи" />
+      <button type="submit" class="todolist-form_submit">Сохранить</button>
+    </form>
+    <div class="todolist__tasks"></div>
+  </template>
+
+  <template id="todolist-item-template" style="display: none;">
+    <article class="todolist-item">
+      <span class="todolist-item__text">Текст задачи</span>
+      <button class="todolist-item__del"></button>
+    </article>
+  </template>
+
+  <template id="preloader-template" style="display: none;">
+    <div class="preloader">
+      <div class="preloader__circle">
+      </div>
+    </div>
+  </template>
+
+  <template id="error-template" style="display: none;">
+    <div class="error">
+      <p class="error__text">Ошибка</p>
+    </div>
+  </template>
+</body>
+
+</html>
